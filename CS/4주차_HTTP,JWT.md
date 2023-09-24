@@ -15,15 +15,12 @@
 
 ### 100번대 : 정보 확인
 
-| 상태코드 | 이름               | 의미                           |
-| -------- | ------------------ | ------------------------------ |
-| 100      | Continue           | 진행중                         |
-| 101      | Switching Protocol | 클라이언트 → 서버 로 보낸 요청 |
+| 상태코드 | 이름               | 의미                                                      |
+| -------- | ------------------ | --------------------------------------------------------- |
+| 100      | Continue           | 진행중                                                    |
+| 101      | Switching Protocol | 해당 코드는 Websocket 프로토콜 전환시에 사용              |
+| 102      | Processing(WebDAV) | 서버가 요청 수신했지만, 아직 제대로된 응답 알려줄 수 없음 |
 
-헤더에 대한 응답으로 보내짐
-해당 코드는 Websocket 프로토콜 전환 시에 사용 |
-| 102 | Processing(WebDAV) | 서버가 요청 수신함
-아직 제대로된 응답 알려줄 수 없음 |
 <br>
 
 ### 200번대 : 통신 성공
@@ -88,8 +85,6 @@ HTTP 메서드란 클라이언트와 서버 사이에 이루어지는 요청(Req
 
 ## 1. 주요 메소드
 
----
-
 **GET / POST / PUT / PATCH / DELETE**
 <br>
 <br>
@@ -130,8 +125,6 @@ PUT과 유사하나, 모든 데이터를 갱신하는 것이 아닌 리소스의
 
 ## 2. 기타메소드
 
----
-
 **HEAD / OPTIONS / CONNECT / TRACE**
 <br>
 <br>
@@ -145,6 +138,8 @@ Response 메세지를 받았을 때, Body는 비어있고, Header 정보만 들�
 • 응답의 상태 코드만 확인할때와 같이 Resource를 받지 않고 오직 찾기만 원할때 사용 (일종의 검사 용도)
 
 ![HTTPMethod_haed](./img/HTTPMethod_haed.png)
+<br>
+<br>
 <br>
 <br>
 
@@ -161,13 +156,12 @@ Request 리소스가 수신되는 경로를 보기 위함
 
 • 최초 Client의 요청에는 Body가 포함될수 없다.
 
-<aside>
-💡 Tip!
-클라이언트의 요청 패킷이 방화벽, Proxy 서버, Gateway 등을 거치면서 패킷의 변조가 일어날 수 있는데, 그래서 TRACE 메서드를 통해 요청했던 패킷 내용과 응답 받은 요청 패킷 내용을 비교하여 변조 유무를 확인 할 수 있다
-
-</aside>
+> TIP!
+> 클라이언트의 요청 패킷이 방화벽, Proxy 서버, Gateway 등을 거치면서 패킷의 변조가 일어날 수 있는데, 그래서 TRACE 메서드를 통해 요청했던 패킷 내용과 응답 받은 요청 패킷 내용을 비교하여 변조 유무를 확인 할 수 있다
 
 ![HTTPMethod_trace](./img/HTTPMethod_trace.png)
+<br>
+<br>
 <br>
 <br>
 
@@ -186,6 +180,8 @@ Request 리소스가 수신되는 경로를 보기 위함
 ![HTTPMethod_option](./img/HTTPMethod_option.png)
 <br>
 <br>
+<br>
+<br>
 
 ### 5. CONNECT
 
@@ -193,6 +189,7 @@ Request 리소스가 수신되는 경로를 보기 위함
 보통 Proxy를 통해 \*SSL 통신을 하고자할 때 사용한다.
 
 -   SSL : 암호화 기반의 통신 프로토콜이다. HTTPS는 HTTP에 SSL이 결합된 개념
+    <br>
     <br>
     <br>
     <br>
