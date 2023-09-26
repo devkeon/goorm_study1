@@ -58,7 +58,7 @@
 심지어 기능이 업그레이드 되어 핸드폰이 새로 출시되어도 우리가 실제로는 어떻게 성능이 업그레이드 되었는지 모르고 사용할 수 있다.
 만약 내부가 공개되어있다면 이는 곧 사용자 경험으로 하여금 떨어질 수 있다. 
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/c59bd9ed-462b-4d49-b98c-c57f2fe7e191)
+![image](https://github.com/devkeon/goorm_study1/assets/121371840/791ef30d-404d-45d4-ad9c-e28f3064d617)
 
 
 ~~엥..?~~
@@ -73,7 +73,7 @@
 운전이 가능하다. 포르쉐가 몇 마력을 내는지, 페라리에는 무슨 기능이 있는지와 상관없이 자동차의 본질은 변하지 않고 공통적이기 때문이다.
 이렇게 운전을 하는 것은 사용자이고 자동차가 추상화된 객체라고 생각하면 이해가 될 것이다.
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/6752a2e1-557d-4fa0-8513-ed77c3fbea1f)
+![image](https://github.com/devkeon/goorm_study1/assets/121371840/7968153b-8339-4237-a21d-420916f6e536)
 
 <br />
 <br />
@@ -83,7 +83,7 @@
 - 위에서 말했던 객체 지향 프로그래밍의 장점 중 하나인 재사용을 실현해주는 특징이다.
 - 추상화된 객체로부터 상속을 받아 기능을 추가하여 객체를 만들 수 있는데 이 때, 코드의 재사용성이 증가한다.
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/1f03f318-2c4a-4923-b57c-f8546d94b825)
+![image](https://github.com/devkeon/goorm_study1/assets/121371840/4ad002fd-0903-4595-b46d-900ef6170af4)
 
 ### 다형성
 - 객체 지향의 핵심이라고 생각한다.
@@ -92,7 +92,8 @@
 
 >위에서 봤던 차의 비유에서 자동차라는 추상화 객체를 상속받아 세부적인 기능을 구현해 페라리를 만들 수도 있고 포르쉐를 만들 수도 있는 것과 같다.
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/bf82fc8c-d90b-47fd-b3a2-e38070484d76)
+![image](https://github.com/devkeon/goorm_study1/assets/121371840/2d11acd8-aa43-4365-97f3-8e0af0dc0fb8)
+
 
 ~~김영한님 강의에서 확인할 수 있습니다.~~
 
