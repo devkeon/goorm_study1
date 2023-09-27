@@ -1,6 +1,5 @@
 # 객체 지향 프로그래밍 (Object-Oriented Programming, OOP)
 
----
 
 ## 들어가기에 앞서..
 프로그래밍 패러다임에 대해 알아볼 필요가 있다. 이유는? 
@@ -29,7 +28,6 @@
 
 그렇다면 위의 프로그래밍 패러다임들보다 비교적 최근에 나온 객체 지향 프로그래밍은 무엇일까?
 
----
 
 ## 객체 지향 프로그래밍이란?
 
@@ -41,8 +39,6 @@
 - 프로그램을 보다 유연하 변경이 용이하게 만든다.
 - 코드의 재사용을 통해 코드가 더욱 간결해질 수 있다.
 - 실제 세상의 상호관계를 프로그래밍에 구현하고자 하였기 때문에 보다 직관적인 코드 작성이 가능하다. (진짜 이런지는 사실 잘 모르겠음)
-
----
 
 ## 객체 지향 프로그래밍의 특징
 아마 프로그래밍을 배운지 얼마 안 된 사람도 이 4가지를 들어봤을 것이다. 그럼에도 감이 안잡혔던 사람들이 많았을 것 같은데 제대로 짚고 넘어가보자.
@@ -58,8 +54,7 @@
 심지어 기능이 업그레이드 되어 핸드폰이 새로 출시되어도 우리가 실제로는 어떻게 성능이 업그레이드 되었는지 모르고 사용할 수 있다.
 만약 내부가 공개되어있다면 이는 곧 사용자 경험으로 하여금 떨어질 수 있다. 
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/791ef30d-404d-45d4-ad9c-e28f3064d617)
-
+![img](https://www.particlemag.com/wp-content/uploads/2022/12/1220-1-1024x682.jpg)
 
 ~~엥..?~~
 
@@ -73,8 +68,7 @@
 운전이 가능하다. 포르쉐가 몇 마력을 내는지, 페라리에는 무슨 기능이 있는지와 상관없이 자동차의 본질은 변하지 않고 공통적이기 때문이다.
 이렇게 운전을 하는 것은 사용자이고 자동차가 추상화된 객체라고 생각하면 이해가 될 것이다.
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/7968153b-8339-4237-a21d-420916f6e536)
-
+![img](https://i0.wp.com/blog.codestates.com/wp-content/uploads/2022/11/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%B6%94%EC%83%81%ED%99%94.png?w=893&ssl=1)
 <br />
 <br />
 
@@ -83,7 +77,7 @@
 - 위에서 말했던 객체 지향 프로그래밍의 장점 중 하나인 재사용을 실현해주는 특징이다.
 - 추상화된 객체로부터 상속을 받아 기능을 추가하여 객체를 만들 수 있는데 이 때, 코드의 재사용성이 증가한다.
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/4ad002fd-0903-4595-b46d-900ef6170af4)
+![img_2](https://i0.wp.com/blog.codestates.com/wp-content/uploads/2022/11/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%83%81%EC%86%8D.png?w=893&ssl=1)
 
 ### 다형성
 - 객체 지향의 핵심이라고 생각한다.
@@ -92,12 +86,10 @@
 
 >위에서 봤던 차의 비유에서 자동차라는 추상화 객체를 상속받아 세부적인 기능을 구현해 페라리를 만들 수도 있고 포르쉐를 만들 수도 있는 것과 같다.
 
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/2d11acd8-aa43-4365-97f3-8e0af0dc0fb8)
-
-
+![img_3.png](https://velog.velcdn.com/images%2Fhyun6ik%2Fpost%2F754b49f8-44e8-49e7-9240-cc35062df754%2Fimage.png)
 ~~김영한님 강의에서 확인할 수 있습니다.~~
 
----
+
 뭔가 2% 빠진것 같은데?
 
 ## 다형성의 본질에 대해 살펴보자면..
@@ -116,7 +108,6 @@ Vehicle car = new Porsche();
 
 이제 이러한 객체 지향을 어떻게 설계해야하는지 알아보겠다.
 
----
 
 ## 객체 지향 설계 과정
 
@@ -127,8 +118,7 @@ Vehicle car = new Porsche();
 - 객체 간에 어떻게 메소드 요청을 주고받을지 결정한다.
 
 ## 객체 지향 설계 원칙
-![image](https://github.com/devkeon/goorm_study1/assets/121371840/be937edd-e679-4896-91dd-ba5f85f77028)
-
+![img_4](https://velog.velcdn.com/images/haero_kim/post/169ef81a-0c8c-4241-a73a-135d5b67ffea/1_XOMTPWTpDLypkp079p9XXg.png)
 
 우리 선배 개발자들은 객체 지향 설계를 잘하라고 원칙을 만들어두셨습니다. 사실 원칙으로 객체 지향 프로그래밍에 들어가기에 앞서 알아야 할 것들이지만
 역설적이게도 제일 까다롭고 어려운 부분이다. 하나씩 살펴보겠습니다.
@@ -164,6 +154,48 @@ Vehicle car = new Porsche();
 - 말그대로 참조해야 할 클래스가 아닌 그 대상의 상위 요소 (인터페이스 혹은 추상 클래스)에 참조하라는 원칙이다.
 - 의존 관계를 맺을 때 변화하기 쉬운 것보다는 변화하기 어려운, 역할에 의존하라는 의미이다. (만약 구현체에 의존하면 수정이 생기면 굉장히 복잡해지겠죠?)
 
+>고수준 모듈은 저수준 모듈에 의존하면 안된다는 의미이다.
+> - 고수준 모듈: 실제 사용과 근접해 있는 것, 모듈의 본질적인 기능과 책임을 나타낸 것.
+> - 저수준 모듈: 이러한 고수준 모듈의 기능을 구현하기 위한 하위 기능의 실제 구현
+
+이게 무슨 소리인가 싶을 텐데 코드로 살펴보자.
+
+```java
+public class DeliveryService {
+    public void delivery() {
+        rider.deliver();
+    }
+    public void payment() {
+        toss.credit();
+    }
+}
+```
+이러한 배달 서비스를 하는 고수준 모듈이 있다고 치자. 위에서 배달 서비스는 저수준 모듈인 rider와 toss를 의존하고 있다.
+
+이런 상황이라면, 만약 rider가 아닌 드론이 배달해주고 공짜 이벤트를 한다면 아래와 같이 코드를 수정해야 할 것이다.
+
+```java
+public class DeliveryService {
+    public void delivery() {
+        dron.fly();
+    }
+    public void payment() {
+        forFree.justGet();
+    }
+}
+```
+기능이 바뀌었다 고수준 모듈의 코드 또한 수정을 해야하는 복잡한 상황이 발생한다. 따라서 고수준 모듈에 배달과 결제 인터페이스를 두고
+저수준 모듈이 고수준 모듈의 인터페이스를 의존하게 된다면 의존 관계가 역전될 것이다. 그러면 고수준 모듈의 변경을 최소화 해주면서 
+저수준 모듈의 유연성이 높아지는데 이것이 바로 의존 역전의 법칙이다.
+
 위와 같이 SOLID 원칙을 통해 객체 지향을 더욱 객체 지향 답게 구현할 수 있게 된다.
 
 이러한 원칙들을 기억하며 즐거운 객체 지향 프로그래밍 되길 바랍니다.
+
+참고자료:
+
+인파, "객체 지향 설계의 다섯가지 원칙-S.O.L.I.D", Inpa Dev, 2022.11.11. 12:42, https://inpa.tistory.com/entry/OOP-%F0%9F%92%A0-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%EC%84%A4%EA%B3%84%EC%9D%98-5%EA%B0%80%EC%A7%80-%EC%9B%90%EC%B9%99-SOLID
+
+코드 스테이츠, "객체 지향 프로그래밍의 4가지 특 | 추상화, 상속, 다형성, 캡슐화", code blog, 2022.11.30. , https://www.codestates.com/blog/content/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8A%B9%EC%A7%95
+
+김영한, "스프링 핵심 원리 - 기본편", 인프런, https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard
